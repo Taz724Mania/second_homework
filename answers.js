@@ -86,6 +86,10 @@ for (let elem of a){
 // So, would that then mean that the code for the prompt would look like this?
 const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] //I keep forgetting to put "" around my elements which returns as undefined; MUST REMEMBER THE ""
 
+for (const Donatello of tmnt) {
+    console.log("Donatello").toUpperCase())
+    
+}
 
 
 
