@@ -25,14 +25,29 @@ if (i / 3) { // determines that if a number is divisible by 3, that Fizz will lo
     console.log("Buzz")
 } if (i / 3 && 5) // determines that if a number is divisible by both 3 AND 5, that FizzBuzz will log instead of the number
     console.log("FizzBuzz")
-
-
 }
+// this is the first time that these really clicked :D
 
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
+plantee[2] = 5001 // adressing plantee at the 2 index, where = allows change, 5000 becomes 5001
+    console.log(plantee[2])
+
+wolfy[3] = "Gotham City"
+    console.log(wolfy[3])
+
+dart.push("Hawkins")
+    console.log(dart)
+
+wolfy[0] = "Gameboy" //tried to use the .pop() method, but it kept removing the last index; eg. wolfy.pop("Wolfy"), wolfy.pop([0])
+    console.log(wolfy) // ended up using the replacement method instead
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
