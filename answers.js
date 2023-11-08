@@ -1,15 +1,18 @@
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
-for (let i = 1; i < 21; i++){
-    console.log(i)
+for (let i = 1; i < 21; i++){ //logs 1 through 20 b/c the loop os told to start w/ 1 (i=1) and not progress passed 20 (i<21)
+    console.log(i) // i++ adds one to each previous iteration making the loop count each number in successive order
 }
 
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
-
-
+for (let i = 2; i < 201; i += 2){
+    console.log(i)
+}
+// Since the initial loop is true, then starting the log at 2 where it doesn't increase passed 200 hundred
+// and each number is added to by 2 (i+=2) where the expression (+=) is addition, then this logs every even number b/w 0 and 200
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
