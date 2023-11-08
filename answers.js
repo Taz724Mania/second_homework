@@ -52,6 +52,42 @@ wolfy[0] = "Gameboy" //tried to use the .pop() method, but it kept removing the 
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+// ACCORDING TO BARD
+// The for...of loop is a type of loop that iterates over the values of an iterable object. 
+//An iterable object is an object that can be iterated over, such as an array, a string, or a map.
+//The syntax of the for...of loop is as follows:
+//   JavaScript
+//              for (const value of iterable) {
+  //                Code to execute for each value
+//              }
+
+//
+// The toUpperCase() method is a method that can be used to convert a string to uppercase letters. 
+// It does not modify the original string, but instead returns a new string that contains the uppercase version of the original string.
+
+// Example
+const str = "hello";
+const upperStr = str.toUpperCase();
+console.log(upperStr); // Output: HELLO
+
+// ACCORDING TO STACK OVERFLOW
+//for..of takes the element.
+
+var a = ['a','b','c'];
+
+for (let elem of a){
+    console.log(elem);
+}
+// output: 
+// 'a'
+// 'b'
+// 'c'
+
+// So, would that then mean that the code for the prompt would look like this?
+const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] //I keep forgetting to put "" around my elements which returns as undefined; MUST REMEMBER THE ""
+
+
+
 
 
 ////////////////////////////////
