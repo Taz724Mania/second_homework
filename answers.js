@@ -135,7 +135,26 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+console.log(whereIsWaldo.indexOf('Eggbert'))
+whereIsWaldo.splice(1,1) // Eggbert is not *inside* a specific subarray, so you don't need to add [] after whereIsWaldo
+console.log(whereIsWaldo)
+
+whereIsWaldo[1][2] = 'No One' // Understanding that the subarray follows the same protocol for indexes, you can use the simple method
+// of addressing the subarray index and then the internal index of an element to change it.
+console.log(whereIsWaldo)
+
+const subArray = whereIsWaldo[2]; //Locates the first subarray that we need
+    console.log(subArray)
+const subSubArray = subArray[1]; //Locates the sub-subarray that we need
+    console.log(subSubArray)
+const element = subSubArray[1]; //Locates the element that we need
+    console.log(element)
+    //the above access the element
+    console.log('Waldo')
 
 ////////////////////////////////
 //  Excited Kitten
