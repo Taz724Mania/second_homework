@@ -86,10 +86,10 @@ for (let elem of a){
 // So, would that then mean that the code for the prompt would look like this?
 const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] //I keep forgetting to put "" around my elements which returns as undefined; MUST REMEMBER THE ""
 
-for (const Donatello of tmnt) {
-    console.log("Donatello").toUpperCase())
+//for (const Donatello of tmnt) {
+ //   console.log("Donatello").toUpperCase())
     
-}
+//}
 
 
 
@@ -97,7 +97,40 @@ for (const Donatello of tmnt) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+    console.log(favMovies.indexOf('Titanic'))
+//1. .sort alphabetically sorted the array. It is not permamnent, further changes can be made.
+    favMovies.sort()
+    console.log(favMovies) 
+//2. 
+    favMovies.pop()
+    console.log(favMovies)
+//3.
+    favMovies.push('Guardians of the Galaxy')
+    console.log(favMovies)   
+//4.
+    favMovies.reverse()
+    console.log(favMovies)
+//5.
+    const elementRemoved = favMovies.shift()
+    console.log(favMovies)
+//6. Using unshift adds elements to the beginning of the array. In this case, it added Silence of the Lambs.
+    favMovies.unshift('Silence of the Lambs')
+    console.log(favMovies)
+//7.
+    console.log(favMovies.indexOf('Django Unchained'))
+    favMovies.splice(15, 1, 'Avatar')
+    console.log(favMovies)
+//8. The original array was altered.
+//9. The array was sectioned off starting with the 10th element and ending with the 19th element. This created a separate variable without changing the original.
+    console.log(favMovies.length)
+    const favMovies2 = favMovies.slice(10)
+    console.log(favMovies, favMovies2)
+//10. Console logging FF returns an undefined error since it is now in favMovies2
+    console.log(favMovies['Fast and Furious'])
+//11. It is better to use const for arrays since they are generally immutable objects, meaning that they can't be changed.
+//      However, there are ways to change the array that are more easily tracked than say accidentally console logging the wrong text. 
+//      Using const essentially makes the arrays safer to use in the code because it is harder to accidentally make changes.
 
 ////////////////////////////////
 // Where is Waldo
