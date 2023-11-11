@@ -159,6 +159,16 @@ const element = subSubArray[1]; //Locates the element that we need
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+const  kitSpeak = ['human...why you taking pictures of me?', 'the catnip made me do it', 'why does the red dot always get away']
+
+for (let i = 0; i < 20; i++) { //runs the loop 20 times
+    if (i % 2 === 0) { //tells the loop that even multiples of 2 should use the randomization code beneath it to determine what it logs. (I still don't really understand the % operator, but i'm also terrible at math..unless its DnD math)
+        purr = Math.floor(Math.random() * kitSpeak.length) //this took me FIVE-EVER to figure out; lots of googling and talking it out; def need more practice; ngl, almost cried
+        console.log(kitSpeak[purr])
+    } else {
+        console.log("Love me, pet me! HSSSSSS!")
+    }
+  }
 
 
 ////////////////////////////////
