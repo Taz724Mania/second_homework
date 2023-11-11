@@ -66,33 +66,23 @@ wolfy[0] = "Gameboy" //tried to use the .pop() method, but it kept removing the 
 // It does not modify the original string, but instead returns a new string that contains the uppercase version of the original string.
 
 // Example
-const str = "hello";
-const upperStr = str.toUpperCase();
-console.log(upperStr); // Output: HELLO
-
-// ACCORDING TO STACK OVERFLOW
-//for..of takes the element.
-
-var a = ['a','b','c'];
-
-for (let elem of a){
-    console.log(elem);
-}
-// output: 
-// 'a'
-// 'b'
-// 'c'
+//const str = "hello";
+//const upperStr = str.toUpperCase();
+//console.log(upperStr); // Output: HELLO
 
 // So, would that then mean that the code for the prompt would look like this?
-const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] //I keep forgetting to put "" around my elements which returns as undefined; MUST REMEMBER THE ""
+//const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"] //I keep forgetting to put "" around my elements which returns as undefined; MUST REMEMBER THE ""
 
 //for (const Donatello of tmnt) {
  //   console.log("Donatello").toUpperCase())
     
-//}
-
-
-
+//} def not that
+//TAKE 2; USE WHAT YOU KNOW WHAT YOU CAN DO WITH ARRAYS (SPLIT, MAP, SPLICE, ETC)
+const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+    for (const element of tmnt){ //I KEPT THINKING I HAD TO PUT THE ACTUAL ELEMENT INSTEAD OF JUST *ELEMENT* 
+        element.toUpperCase() //and idek remember what I was doing with the console log in the first attempt, just making it harder on myself i guess 
+    }                           //this makes so much more sense, i overthink things way too much
+    console.log(tmnt)
 
 ////////////////////////////////
 // Methods, Revisited
@@ -168,7 +158,6 @@ for (let i = 0; i < 20; i++) { //runs the loop 20 times
     } else {
         console.log("Love me, pet me! HSSSSSS!")
     }
-  }
 
 ////////////////////////////////
 //  Find the Median
@@ -184,3 +173,6 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 //Therefore
     console.log(nums[12]) // output 15
 //ngl, i had to refresh my knowledge on finding medians T_T
+
+
+//I hope my personal notes on here aren't too much for you all lol its just stream of consciousness tbh
