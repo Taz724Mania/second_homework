@@ -170,9 +170,17 @@ for (let i = 0; i < 20; i++) { //runs the loop 20 times
     }
   }
 
-
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
-
-
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]
+//To find the Median, it has to be sorted from lowest to highest
+    nums.sort()
+        console.log(nums) //11, 11, 11, 11, 12, 12, 12, 12, 13, 14, 14, 15, 15, 15, 15, 16, 16, 17, 17, 17, 18, 18, 19, 19, 71
+//Then the length has to be determined
+    console.log(nums.length) // 25 (odd)
+//The index of the middle element has to be determined and is the median
+    console.log(Math.floor(nums.length / 2)) // 12 is the index of the middle element
+//Therefore
+    console.log(nums[12]) // output 15
+//ngl, i had to refresh my knowledge on finding medians T_T
